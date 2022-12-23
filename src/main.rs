@@ -1,6 +1,7 @@
 use std::process;
 
 mod day_01;
+mod day_02;
 
 fn main() {
     let mut args = std::env::args();
@@ -16,6 +17,7 @@ fn main() {
 
     let result = match day.as_str() {
         "01" => day_01::run(args),
+        "02" => day_02::run(args),
         _ => Err("unknown day"),
     };
 
